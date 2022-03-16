@@ -20,7 +20,7 @@ country:{
 year :{
     type:Number
 },
-director_id:Number,
+director_id:schema.Types.ObjectId,
 
 imdb_score:Number
 }) 
