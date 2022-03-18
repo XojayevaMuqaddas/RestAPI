@@ -1,6 +1,7 @@
 const express =require("express")
 const router = express.Router()
 const cinema = require("../model/movies")
+
 router.get("/api/movies" , (req , res )=>{
     cinema.find({},(err , data)=>{
         if (err) throw err

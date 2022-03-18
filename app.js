@@ -5,6 +5,7 @@ const rMovie=require("./routers/movie")
 const bodyParser=require("body-parser")
 const mongoose=require("mongoose");
 const rDirector=require("./routers/director")
+const rUser=require("./routers/user")
 
 // const path=require("path")
 mongoose.connect('mongodb://localhost:27017/new_proekt')
@@ -25,6 +26,7 @@ app.use(bodyParser.json())
 
 app.use(rMovie)
 app.use(rDirector)
+app.use(rUser)
 
 
 app.listen(port , ()=>{

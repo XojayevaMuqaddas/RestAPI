@@ -15,7 +15,8 @@ const director =schema({
         requires:true
 
 
-    }
+    },
+    user_id:schema.Types.ObjectId,
 })
 
 module.exports=mongoose.model("director" , director)
