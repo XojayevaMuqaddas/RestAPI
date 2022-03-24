@@ -8,7 +8,7 @@ const rDirector=require("./routers/director")
 const rUser=require("./routers/user")
 const secretKey=require("./config")
 const path=require("path")
-
+const midware=require("./middlewere/jwtmidware")
 mongoose.connect('mongodb://localhost:27017/new_proekt')
 const db=mongoose.connection
 db.on("open" ,()=>{
@@ -29,6 +29,7 @@ app.use(bodyParser.json())
 app.use(rMovie)
 app.use(rDirector)
 app.use(rUser)
+app.use(midware)
 
 
 app.listen(port , ()=>{
