@@ -1,0 +1,20 @@
+include header 
+body 
+    include navbar 
+    h2.display-4.text-center Kino qo'shish
+    form.pt-5(method="POST")
+    .mb-3.m-auto.mx-5.py-2
+      label(for='exampleInputEmail1') Kino nomi:
+      input#exampleInputComment.form-control(type='text' name='title' )
+    .mb-3.mx-5
+      label(for='exampleInputPassword1') Janiri:
+      input#exampleInputname.form-control(type='text' name='category' )
+    .mb-3.mx-5
+      label(for='exampleInputPassword1') Ishlab chiqaruvchi :
+      input#exampleInputmanufacture.form-control(type='text' name='country'  )
+    mb-3.mx-5
+      label(for='exampleInputPassword1') Ishlab chiqarilgan yili  :
+      input#exampleInputmanufacture.form-control(type='text' name='year'  )  
+    .mb-3.mx-5
+        button.btn.btn-primary.my-5(type='submit') Tasdiqlash 
+    

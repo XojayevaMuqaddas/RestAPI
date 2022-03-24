@@ -59,7 +59,12 @@ promise.then(data=>{
     res.json(data)
 }).catch(err=>console.log(err))
 })
-
+// pug qo'shish
+router.get("/movie" ,(req ,res)=>{
+    res.render("movie" ,{
+        title:" Kino qo'shish",
+    })
+})
 module.exports=router
 
 

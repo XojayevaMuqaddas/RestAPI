@@ -1,0 +1,12 @@
+include header 
+body
+    include navbar
+    h2.text-center.my-3 kirish
+    form(method="POST")
+        .mb-3.m-auto.mx-5.py-2
+            label(for='exampleInputEmail1') Login kiriting:
+            input#exampleInputComment.form-control(type='text' name='username')
+        .mb-3.mx-5
+            label(for='exampleInputPassword1') Parolni kiriting:
+            input#exampleInputname.form-control(type='password' name='password' )
+            button.btn.btn-outline-success.my-5(type='submit') Yuborish            
