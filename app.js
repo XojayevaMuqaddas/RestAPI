@@ -35,3 +35,4 @@ app.use(midware)
 app.listen(port , ()=>{
     console.log("server ishga tushdi");
 })
+module.exports = app
